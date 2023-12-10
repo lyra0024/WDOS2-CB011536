@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="./reset.css" type="text/css">
+    <link rel="stylesheet" href="./booking.css" type="text/css">
+    <title>Reservations | Santani</title>
+</head>
+<body>
+    <header>
+        <!-- Nav bar -->
+        <nav>
+            <section class="logo" aria-label="Logo Section">
+                <img src="./Images/santani-logo.svg" alt="The Santani logo">
+            </section>
+        </nav>
+        <section class="container" aria-label="Heading Section">
+            <section class="r-heading" aria-label="Reserve Now">Reserve Now</section>
+            <img src="./Images/bookingmain.png" alt="The room of the mountain view chalet">
+        </section>
+    </header>
+    <section class="c-container" aria-label="Main Content Container">
+        <section class="c-box2">
+            <section>
+                <h2>Current Bookings</h2>
+                <hr class="smlhr">
+                <section class="b-table">
+                    <h3>Personal Details</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Details</th>
+                                <th><p id="perDet">Other Details</p></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="column1">Name</td>
+                                <td id="fullName" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td class="column1Cell">Contact Number</td>
+                                <td id="telNum" class="column2Cell"></td>
+                            </tr>
+                            <tr>
+                                <td class="column1Cell">Email</td>
+                                <td id="e-mail" class="column2Cell"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr class="smallhr">
+                <section class="b-table">
+                    <h3>Booking Details</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Details</th>
+                                <th><p id="bookDetail">Other Details</p></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Branch</td>
+                                <td id="branchRow" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td class="column1Cell">Adults</td>
+                                <td id="adNum" class="column2Cell"></td>
+                            </tr>
+                            <tr>
+                                <td class="column1Cell">Children</td>
+                                <td  id="childNum" class="column2Cell"></td>
+                            </tr>
+                            <tr>
+                                <td class="column1Cell">Check In</td>
+                                <td id="a-date" class="column2Cell"></td>
+                            </tr>
+                            <tr>
+                                <td class="column1Cell">Check Out</td>
+                                <td  id="d-date" class="column2Cell"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr class="smallhr">
+                <section class="b-table">
+                    <h3>Room Booking</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rooms</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Single Rooms</td>
+                                <td id="s-rooms" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Duluxe Rooms</td>
+                                <td id="d-rooms" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Triple Rooms</td>
+                                <td id="t-rooms" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Extra Bedding</td>
+                                <td id="bedding" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Extra Children's Meals</td>
+                                <td id="childMeal" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Room Total</td>
+                                <td id="r-total" class="tab2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr class="smallhr">
+                <section class="b-table">
+                    <h3>Extra Requirements</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Requirement</th>
+                                <th><p id="exReQ">Details</p></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>View</td>
+                                <td id="exView" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Requirements</td>
+                                <td id="reQ" class="tab2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr class="smallhr">
+                <section class="b-table">
+                    <h3>Adventure Booking</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Booking</th>
+                                <th><p id="AdBook">Details</p></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Branch</td>
+                                <td id="advBranch" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td id="Name" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td >Local Adults</td>
+                                <td id="l-adults" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Local Children</td>
+                                <td id="l-child" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Foreign Adults</td>
+                                <td id="f-adults" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Foreign Children</td>
+                                <td  id="f-child" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td>Guide</td>
+                                <td id="guide" class="tab2"></td>
+                            </tr>
+                            <tr>
+                                <td> Adventure Total</td>
+                                <td id="ad-total" class="tab2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr class="smallhr">
+                <section class="row50" aria-label="box for the promo code and to check the loyalty points">
+                    <section class="inputBox2" aria-label="Input box for the promo code">
+                        <label for="promo">Enter the Promo Code</label>
+                        <input type="text" id="promo">
+                    </section>                          
+                </section>
+                <section id="loy" aria-label="Loyalty Section">
+                    <p id="loyalty"></p>
+                    <section class="fav" aria-label=" box and Check loyalty button">
+                      <button type="submit" id="loyaltybtn">Check Loyalty</button>
+                      <span class="tooltiptext">Check Loyalty</span> 
+                    </section>
+                </section>
+            </section>
+            <section class="btns" aria-label="Buttons">
+                <section class="fav" aria-label="Book Now button"> 
+                    <button type="submit" class="bookbtn" id="Bookbtn">Book Now</button>
+                    <span class="tooltiptext">Book Now</span> 
+                </section> 
+                <section class="fav" aria-label="Book Adventure button">
+                    <button type="submit" class="advbtn" id="advbtn">Book Adventure</button>
+                    <span class="tooltiptext">Book Adventure</span> 
+                </section>
+                <section class="btns" aria-label="Buttons">
+                    <section class="fav" aria-label="Add to favourites Button">
+                        <button type="submit" class="favbtn" id="favbtn">♡</button>
+                        <span class="tooltiptext">Add to Favorites</span>  
+                    </section>
+                </section>
+            </section>
+            <hr class="smlhr">
+            <h2>Overall Bookings</h2>
+            <section class="b-table" aria-label="Overall Booking">
+                <table>
+                    <thead id="heading">
+                        <tr>
+                            <th>Overall Booking</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Room Total</td>
+                            <td id="Rtotal"></td>
+                        </tr>
+                        <tr>
+                            <td>Adventure Total</td>
+                            <td  id="Atotal"></td>
+                        </tr>
+                        <tr>
+                            <td>Promo</td>
+                            <td id="promoCode"></td>
+                        </tr>
+                        <tr>
+                            <td id="ovTotal">Overall Total</td>
+                            <td id="oTotal"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </section>
+        </section>
+       
+        <section class="c-box1" aria-label="Room details and customer information Section">
+            <section class="contact-us" aria-label="Room details and customer information Section">
+                <section class="book" aria-label="Room details and customer information Section">
+                    <form>
+                        <section class="form-b">
+                            <!--start of the Form -->
+                            <h2 id="b-heading">Reservations</h2>
+                            <section class="contact form" aria-label="Form">     
+                                <hr id="bookhr">
+                                <section aria-label="Rooms">
+                                    <section class="box-container">
+                                        <h2>Pick a Room</h2>
+                                        <section class="box" aria-label="Single Room">
+                                            <img src="./Images/s-room.jpg" alt="The panoramic view of the single room of Santani">
+                                            <section class="content">
+                                                <h3>Single</h3>
+                                                <p class="text">Santani's Single Rooms with twin beds offer a cozy retreat, providing the perfect blend of comfort and solitude for a restful stay.</p>
+                                                <section class="price" aria-label="Price of single room"><p>LKR 25,000.00</p></section>
+                                                <section class="icons" aria-label="The room amenities">
+                                                    <p>
+                                                        <span class="material-symbols-outlined">hotel</span>
+                                                        Twin sized
+                                                    </p>
+                                                    <p>
+                                                        <span class="material-symbols-outlined">ac_unit </span>
+                                                        AC
+                                                    </p>
+                                                    <p>
+                                                        <span class="material-symbols-outlined">shower</span>
+                                                        Shower
+                                                    </p>
+                                                </section>
+                                                <section class="noR" aria-label="Number of rooms">
+                                                    <label for="single">No. of rooms</label>
+                                                    <input type="number" name="single" id="single" min="0">
+                                                </section>
+                                            </section>
+                                        </section>
+                                     </section>
+
+                                    <hr>
+                                    <section class="box" aria-label="Duluxe Room">
+                                        <img src="./Images/d-room.jpg" alt="Image of the bed and Settee of the Duluxe room of Santani">
+                                        <section class="content">
+                                                    <h3>Duluxe</h3>
+                                                    <p class="text">Santani's Deluxe Rooms promise luxury and comfort in a stylish setting, ensuring a memorable and indulgent stay.</p>
+                                                    <section class="price" aria-label="Price of the duluxe room"><p>LKR 35,000.00</p></section>
+                                                    <section class="icons" aria-label="Room amenities">
+                                                          <p>
+                                                            <span class="material-symbols-outlined">hotel</span>
+                                                            Queen sized
+                                                          </p>
+                                                          <p>
+                                                            <span class="material-symbols-outlined">ac_unit </span>
+                                                            AC
+                                                          </p>
+                                                          <p>
+                                                            <span class="material-symbols-outlined">bathtub</span>
+                                                            Bathtub
+                                                          </p>
+                                                    </section>
+                                                    <section class="noR" aria-label="Number of duluxe rooms">
+                                                        <label for="duluxe">No. of rooms</label>
+                                                        <input type="number" name="duluxe" id="duluxe" min="0">
+                                                    </section>
+                                        </section>
+                                    </section>
+
+                                    <hr>
+                                    <section class="box" aria-label="Triple Room">
+                                        <img src="./Images/t-room.jpg" alt="An image of the king sized bed of the Triple Room at Santani">
+                                        <section class="content">
+                                            <h3>Triple</h3>
+                                            <p class="text">Santani's Triple Rooms provide cozy comfort for families or groups, featuring ample space and modern amenities for an memorable stay.</p>
+                                            <section class="price" aria-label="Price of the triple room"><p>LKR 40,000.00</p></section>
+                                            <section class="icons" aria-label="room amenities">
+                                                <p>
+                                                    <span class="material-symbols-outlined">hotel</span>
+                                                    Queen sized
+                                                </p>
+                                                <p>
+                                                    <span class="material-symbols-outlined">ac_unit </span>
+                                                    AC
+                                                </p>
+                                                <p>
+                                                    <span class="material-symbols-outlined">bathtub</span>
+                                                    Bathtub
+                                                </p>
+                                            </section>
+                                            <section class="noR" aria-label="Number of rooms">
+                                                <label for="triple">No. of rooms</label>
+                                                <input type="number" name="triple" id="triple" min="0">
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                                <hr>
+                                <section class="extra">
+                                    <h2>Extra Requirements</h2>
+                                    <section class="b-table" aria-label="Extra requirements table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Select</th>
+                                                    <th>Requirement</th>
+                                                    <th>Cost</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="radio" name="view" id="pool" value="pool"></td>
+                                                    <td><label for="pool">Pool View</label> </td>
+                                                    <td>Free of charge</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="radio" name="view" id="garden" value="garden"></td>
+                                                    <td><label for="garden">Garden View</label></td>
+                                                    <td>Free of charge</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" name="requirement" id="wifi" value="wifi"></td>
+                                                    <td><label for="wifi">Wifi</label></td>
+                                                    <td>Free of charge</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" name="requirement" id="bar" value="bar"></td>
+                                                    <td><label for="bar">Complimetary Mini Bar</label></td>
+                                                    <td>Free of charge</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="number" name="requirement" id="bed" min="0" ></td>
+                                                    <td><label for="bed">Extra Bedding</label></td>
+                                                    <td>8000 per bed</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+                                </section>
+                                <hr>
+                                <section>
+                                    <h2>Customer Details</h2>
+                                    <section class="inputBox1" aria-label="The branch">
+                                        <label class="red" for="branch">Branch</label>
+                                        <select name="branch" id="branch">
+                                            <option value="">Select a Branch</option>
+                                            <option value="Kirana - Benthota">Kirana - A Santani Villa</option>
+                                            <option value="Sama - Kosgoda">Sama Kosgoda - A Santani Retreat</option>
+                                        </select>
+                                    </section>
+                                    <section class="row50" aria-label="The name">
+                                        <section class="inputBox" aria-label="The input box for the first name">
+                                            <label class="red" for="fName">First Name</label>
+                                            <input type="text" placeholder="John" id="fName" required>
+                                        </section>
+                                        <section class="inputBox" aria-label="The input box for the last name">
+                                            <label class="red" for="lName">Last Name</label>
+                                            <input type="text" placeholder="Doe" required id="lName">
+                                        </section>                            
+                                    </section>
+                                    <section class="row50" aria-label="Contact info">
+                                        <section class="inputBox" aria-label="Contact Number">
+                                            <label class="red" for="conNum">Contact Number</label>
+                                            <input type="tel" placeholder="+94 00 000 0000" required id="conNum" class="column2Input">
+                                        </section>
+                                        <section class="inputBox" aria-label="Email Address">
+                                            <label class="red" for="eMail">Email</label>
+                                            <input type="email" placeholder="johndoe@email.com" required id="eMail" class="column2Input">
+                                        </section>
+                                    </section>
+                                    <section class="row50" aria-label="Number of guests">    
+                                        <section class="inputBox" aria-label="Number of Adults">
+                                            <label class="red" for="noAdults">Adults</label>
+                                            <input type="number" placeholder="Enter Number of Adults" required class="column2Input" id="noAdults" min="0" value="0">
+                                        </section>
+                                        <section class="inputBox" aria-label="Number of Children">
+                                            <label for="kids">Kids (over 5 years)</label>
+                                            <input type="number" placeholder="Enter Number of Children" id="kids" required class="column2Input" min="0" value="0">
+                                        </section>
+                                    </section>
+                                    <section class="row50" aria-label="The duration of the stay">    
+                                        <section class="inputBox" aria-label="The check in date">
+                                            <label class="red" for="checkIn">Check In</label>
+                                            <input type="date" required class="column2Input" id="checkIn" min="2023-12-01">
+                                        </section>
+                                        <section class="inputBox" aria-label="The check out date">
+                                            <label class="red" for="checkOut">Check Out</label>
+                                            <input type="date" required class="column2Input" id="checkOut" min="2023-12-01">
+                                        </section>
+                                    </section>
+                                </section>
+                                <hr>  
+                                <section>
+                                    <h2 id="adven">Pick an adventure</h2>
+                                    <section class="b-table" aria-label="The adventures table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Scuba Diving</th>
+                                                    <th>Turtle Hatchery</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Please fill out the form below</td>
+                                                    <td>The tickets are to be purchased at the entrance</td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                        <hr class="ro">
+                                        <section class="inputBox1" aria-label="Branch">
+                                            <label for="advbranch">Branch</label>
+                                            <select name="advbranch" id="advbranch">
+                                                <option value=" ">Select a Branch</option>
+                                                <option value="Kirana - Benthota">Kirana - A Santani Villa</option>
+                                                <option value="Sama - Kosgoda">Sama Kosgoda - A Santani Retreat</option>
+                                            </select>
+                                        </section>
+                                        <section class="row50" aria-label="The number of local participants">
+                                            <section class="inputBox" aria-label="The number of local adults">
+                                                <label for="lAd">Local Adults</label>
+                                                <input type="number" id="lAd" min="0">
+                                            </section>
+                                            <section class="inputBox" aria-label="The number of local children">
+                                                <label for="lChild">Local Children (over 5 years)</label>
+                                                <input type="number" id="lChild" min="0">
+                                            </section>                            
+                                        </section>
+                                        <section class="row50" aria-label="The number of foreign participants">
+                                            <section class="inputBox" aria-label="The number of foreign adults">
+                                                <label for="fAdult">Foreign Adults</label>
+                                                <input type="number" id="fAdult" min="0">
+                                            </section>
+                                            <section class="inputBox" aria-label="The number of foreign children">
+                                                <label for="fChild">Foreign Children (over 5 years)</label>
+                                                <input type="number" id="fChild" min="0">
+                                            </section>
+                                        </section>
+                                        <section class="row50" aria-label="The duration and the need for a guide">    
+                                            <section class="inputBox" aria-label="The duration">
+                                                <label for="hours">No. of hours (Charged per hour)</label>
+                                                <input type="number" id="hours" value="1" min="0">
+                                            </section>
+                                            <section class="inputBox" aria-label="The need for a guide">
+                                                <label for="Instruct">The need of an instructor</label>
+                                                <select id="Instruct" >
+                                                    <option value = "Guide Required">Yes</option>
+                                                    <option value = "A Guide is Not Required">No</option>
+                                                </select>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer-wrapper" aria-label="The footer">
+            <section class="b-footer-link1">
+                <h4 class="foothead">Our Resorts</h4> 
+                <ul>
+                    <li>
+                        <a href="https://www.santani.com/kirana-a-santani-villa/" target="_blank">Kirana - A Santani Villa</a>
+                    </li>
+                    <li>
+                        <a href="https://www.santani.com/samakosgoda-a-santani-retreat/?gclid=EAIaIQobChMI28ut6ev4ggMVQYFLBR0pWAUqEAAYASAAEgIXvPD_BwE" target="_blank">Sama - Kosgoda</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="b-footer-link2">
+                <h4 class="foothead">Key Links</h4>
+                <ul>
+                    <li>
+                        <a href="./booking.html">Reservations</a>
+                    </li>
+                    <li>
+                        <a href="https://www.santani.com/kirana-a-santani-villa/excursions/">Excursions</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="b-footer-end">
+                <h4 class="foothead">Reservations</h4>
+                <ul>
+                    <li><a href="tel:(+94)763991919">(+94) 76 399 1919 </a></li>
+                    <li><a href="mailto:reservations@santani.com">reservations@santani.com</a></li>
+                </ul>
+            </section>
+        </section>
+        <!-- 1.The logo and the main image were taken from https://www.santani.com/ -->
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat|Amiri|Philosopher|Italiana');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+:root{
+    --white:#fff;
+    --black:#000;
+    --background:#2b4442 ;
+    /* #60543a */
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+/* Navigation Bar */
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: var(--background);
+}
+nav .logo {
+    float: none;
+	width: auto;
+	justify-content: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: var(--white);
+}
+
+/* @media screen and (max-width: 915px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+} */
+/* The Booking page */
+.container {
+	position: relative;
+	margin-top:100px;
+    height: 90vh;
+}
+.container img {
+	display: block;
+	width: 100%;
+    height: 90vh;
+}
+.r-heading{
+	z-index: 5;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 7vw;
+    font-family:"EB+Garamond";
+}
+.c-container{
+    display: flex;
+    margin: 1%;
+    gap: 1%;
+    flex-direction: row-reverse;
+}
+.c-box1{
+    height: auto;
+    width: 70%;
+    box-shadow: 0 8px 35px rgba(0,0,0,.15);
+}
+.c-box2{
+    height: auto;
+    width: 30%;
+    box-shadow: 0 5px 35px rgba(0,0,0,.15);
+}
+#b-heading{
+    font-size: 2.5em;
+    color: #102c41;
+    font-family: "Italiana";
+    font-weight: 500;
+}
+.book .contact h2, .box h1, .extra h2, #adven, .form-b h1, .c-box2 h2{
+    color: #102c41;
+    font-weight: 500;
+    margin: 1em 2em;
+    font-family: "Italiana";
+    font-size: 2em;
+}
+.c-box2 h3{
+    color: #0a304d;
+    font-weight: 500;
+    margin: 1em 2em;
+    font-family: "Italiana";
+    font-size: 1.5em;
+}
+.b-table table{
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+    margin: 5%;
+    overflow-x: auto;
+}
+.table{
+    transform: translate(-50%,-50%);
+    border-collapse: collapse;
+    width: 100%;
+    height: 50vh;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+    padding: 0 2%;
+}
+tr{
+    transition: all .2s ease-in;
+}
+th, td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: var(--white);
+}
+th{
+    background-color: rgb(58, 88, 86);
+}
+td{
+    background-color: rgb(100, 126, 124);
+}
+td #bed{
+    max-width: 40px;
+}
+tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2)
+}
+.o-table th, #ovTotal, #oTotal{
+    background-color:rgb(37, 72, 69) ; 
+}
+.o-table td{
+    background-color:rgb(64, 98, 95) ; 
+}
+@media screen and (max-width: 768px) {
+  .table {
+    width: 90%;
+  }
+}
+@media screen and (max-width:47px) {
+    .table{
+        width: 80%;
+        margin: 10%;
+    }
+    th, td{
+        padding: 0;
+    }
+}
+.book .form-b{
+    position: relative;
+    width: 90%;
+    padding: 0 5%;
+}
+.book .form-b .row50{
+    display: flex;
+    gap: 20px;
+}
+.book .details, .rooms{
+    border: #000 1px solid;
+    padding: 10px;
+    border-radius: 7px;
+}
+.book .inputBox, .inputBox2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.book .inputBox1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.book .form-b .row100 .inputBox {
+    width: 100%;
+}
+.inputBox2{
+    width: 88%;
+    margin: 6%;
+}
+.book .inputBox label, .inputBox2 label, .inputBox1 label{
+    color: #193f5c;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.book .inputBox input, .inputBox2 input{
+    padding:10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+}
+.inputBox select, .inputBox1 select{
+    padding:10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none; 
+}
+.inputBox1 select{
+    width: 100%;
+}
+.inputBox1 label{
+    color: #193f5c;
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.box{
+    width: 100%;
+    display: flex;
+    padding: 1em;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    background-color: var(--white);
+    margin: 5% 1%;
+}
+.box h3{
+    font-family: "Philosopher";
+    text-align: justify;
+    font-size: 1.9em;
+    margin: 0.5em 1em;
+}
+.box img{
+   height: 38vh;
+   width: 100%;
+   align-self: center;
+}
+.box .text, .price{
+    max-width: 85%;
+    margin: 0 7.5%;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 30px;
+    margin: 0 2em;
+}
+.noR{
+    display: flex;
+    gap: 1em;
+}
+.box label{
+    margin-left: 2em;
+}
+.box input{
+    padding:10px;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid #333;
+    max-width: 10em;
+}
+#loy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+#loyalty{
+    width: 30vh;
+    height: 8vh;
+    border: 1px rgb(22, 68, 65) solid;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.fav {
+    position: relative;
+    display: inline-block;
+}
+.favbtn, .bookbtn, .advbtn, #loyaltybtn {
+    margin: 4px 2px;
+    color: var(--white);
+    border: none;
+    font-size: 1em;
+    font-weight:500;
+    cursor: pointer;
+    padding: 14px 15px;
+    border-radius: 22px;
+    text-align: center;
+}
+.favbtn, .bookbtn{
+    width: 105px;
+}
+.advbtn, .favbtn, .bookbtn{
+    background-color: rgb(22, 68, 65);
+}
+#loyaltybtn{
+    background-color: rgb(79, 108, 107);
+}
+.advbtn, #loyaltybtn{
+    width: 140px;
+}  
+.favbtn:hover {
+    opacity: 70%;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(110, 146, 144);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.fav:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(110, 146, 144) transparent transparent transparent;
+}
+.red::after{
+    content: " * ";
+    color: red;
+    font-size: 20px;
+}
+#bookhr{
+    margin: 20px 0;
+}
+.smlhr{
+    margin-top: 3%;
+    width: 290px;
+}
+.smallhr{
+    width: 250px;
+}  
+#exReQ, #AdBook, #bookDetail, #perDet{
+    display: none;
+}
+/* Styles for screens up to 1280px */
+@media (max-width: 1280px) {
+    .c-container {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .c-box2,
+    .c-box1 {
+        width: 90%;
+        margin: 0 1% 1% 2%;
+    }
+    .box {
+        width: 90%;
+    }
+    .inputBox2 {
+        width: 70%;
+        margin: 0 15% 1.5% 15%;
+        align-self: center;
+    }
+}
+/* Styles for screens up to 1024px */
+@media (max-width: 1024px) {
+    .container,
+    .container img {
+        height: 50vh;
+    }
+    .c-box1,
+    .c-box2 {
+        width: 90%;
+        margin: 0 1% 1% 4%;
+    }
+    .box h3,
+    .price {
+        text-align: center;
+    }
+    .box .text {
+        max-width: 80%;
+        padding: 0 10%;
+    }
+    .icons,
+    .noR {
+        justify-content: center;
+    }
+    #loyalty{
+        width: 30vh;
+        height: 7vh;
+    }
+}
+/* Styles for screens up to 1181px */
+@media (max-width: 1181px) {
+    .box {
+        flex-direction: column;
+        margin: 1%;
+    }
+    .ico {
+        flex-direction: row;
+    }
+    .box img {
+        height: 28vh;
+        width: 70%;
+    }
+}
+/* Styles for screens up to 991px */
+@media (max-width: 991px) {
+    .book .form-b .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .book .inputBox {
+        width: 100%;
+    }
+}
+/* Styles for screens up to 915px */
+@media (max-width: 915px) {
+    .box img {
+        height: 40%;
+    }
+}
+@media (max-width:430px) {
+    .container, .container img{
+        width: 100%;
+        height: 30%;
+    }
+    #loyalty{
+        width: 20vh;
+        height: 5vh;
+    }
+}
+@media (max-width:375px) {
+    .container, .container img{
+        width: 100.64%;
+        height: 30%;
+    }
+    .c-box1,
+    .c-box2 {
+        width: 90%;
+        margin: 1% 1% 1% 5%;
+    }
+    .btns{
+        flex-wrap: wrap;
+    }
+}
+/* Footer */
+footer{
+    background-color:var(--background);
+    height: auto;
+    margin-top: 2%;
+}
+   
+.footer-wrapper{
+    z-index:4;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align:justify;
+    font-family:"Amiri";
+    height: 40vh;
+}
+.foothead{
+    font-size: 1.5em;
+    color: var(--white);
+    padding: 0  4%;
+    text-align: center;
+    text-decoration: 1px solid silver;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0  4%;
+}
+.b-footer-link1 ul li a:hover, .b-footer-link2 ul li a:hover, .b-footer-end a:hover{
+    color: rgb(116, 116, 114);
+    text-decoration: none;
+} 
+.b-footer-end a, .b-footer-link1 a, .b-footer-link2 a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+@media screen and (max-width:600px) {
+    footer{
+        height: 70vh;
+        border-top: 1pt solid var(--white);
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .foothead{
+        text-align: center;
+        padding: 0;
+    }
+    .b-footer-link1{
+        margin: 30% 0  0  0;
+    }
+    footer ul li{
+        text-align: center;
+    }
+    .socials{
+        grid-template-columns:repeat(6,26px);
+        grid-template-rows:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .b-footer-end a, .b-footer-link1 a, .b-footer-link2 a{
+        font-size: 1.2em;
+    }
+}
+@media (max-width:375px) {
+    footer{
+        width: 101.5%;
+    }
+    .b-footer-link1{
+        margin: 40% 0  0  0;
+    }
+}
